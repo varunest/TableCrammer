@@ -7,6 +7,7 @@ import android.graphics.Point;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.view.GestureDetectorCompat;
+import android.util.TypedValue;
 import android.view.Display;
 import android.view.GestureDetector;
 import android.view.GestureDetector.OnGestureListener;
@@ -50,7 +51,7 @@ public class table extends Fragment {
 			display.getSize(size);
 			int width = size.x;
 			int height = size.y;
-			view.setTextSize( height/20);
+			view.setTextSize(TypedValue.COMPLEX_UNIT_PX,height/20);
 			int result = position * i;
 			String row = "      " + position + " X " + i + " = " + result;
 			view.setText(row);
