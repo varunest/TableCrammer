@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    
+    
+    tools:context=".MainActivity"
+    android:orientation="horizontal" >
+
+    <fragment
+        android:name="com.wrackers.tablecrammer.numbers"
+        android:id="@+id/numbers"
+        android:layout_weight="1.5"
+        android:layout_width="0px" 
+        android:layout_height="match_parent" />
+    <fragment
+        android:name="com.wrackers.tablecrammer.table"
+        android:id="@+id/table"
+        android:layout_weight="8.5"
+        android:layout_width="0px" 
+        android:layout_height="match_parent" />
+   
+</LinearLayout>
